@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script>
+        $(function(){
+           $('.drum-pad').each((i, el)=>{
+            $(el).append('<audio class="clip" id=\"'+$(el).text()+'\"></audio>')
+            $(el).click(()=>{
+                if (document.getElementById($(el).text()).paused) {
+                    document.getElementById($(el).text()).play();
+                }else{
+                    document.getElementById($(el).text()).currentTime = 0
+                }
+                $('#display').text($(el).attr('id'));
+            })
+           }); 
+           $('.clip').each((i, el)=>{
+            let src = 'assets/audio/'+$(el).attr('id')+'.mp3';
+            $(el).attr("src",src)
+           });
+           $(document).keypress((evt)=>{
+            let key= evt.key;
+            key = key.toUpperCase();
+            switch (evt.key){
+                case "q": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "w": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "e": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "a": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "s": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "d": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "z": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "x": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "c": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "Q": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "W": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "E": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "A": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "S": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "D": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "Z": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "X": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                case "C": 
+                    if (document.getElementById(key).paused) {
+                        document.getElementById(key).play();
+                    }else{
+                        document.getElementById(key).currentTime = 0
+                    }
+                    $('#display').text($(document.getElementById(key)).parent().attr('id'));
+                break;
+                default:
+                    console.log(evt.key);
+            }
+           })
+        });
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container-fluid">
+    <div id="drum-machine" >
+        <div id="drum" class="col-sm-8">
+            <Button class="btn btn-secondary drum-pad" id="snare">Q</Button>
+            <Button class="btn btn-secondary drum-pad" id="bass">W</Button>
+            <Button class="btn btn-secondary drum-pad" id="cymbal">E</Button>
+            <Button class="btn btn-secondary drum-pad" id="hi-hat">A</Button>
+            <Button class="btn btn-secondary drum-pad" id="tom-F">S</Button>
+            <Button class="btn btn-secondary drum-pad" id="tom-S">D</Button>
+            <Button class="btn btn-secondary drum-pad" id="tom-M">Z</Button>
+            <Button class="btn btn-secondary drum-pad" id="drum-sticks">X</Button>
+            <Button class="btn btn-secondary drum-pad" id="beat">C</Button>
+        </div>
+        <div class="display-wrap ">
+            <div id="display"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body,html{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.container-fluid{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+    overflow-y: scroll;
+}
+
+#drum-machine{
+    margin: auto;
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    background-color: rgb(226, 223, 223);
+    border: 1em solid orange;
+}
+#drum{
+    margin: 0;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#drum button{
+    margin: 5px;
+    width: 28%;
+    height: 4.5em;
+}
+.display-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    width: 50%;
+}
+#display{
+    margin: auto;
+    background-color: gray;
+    width: calc(2em*3);
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: auto;
+}
